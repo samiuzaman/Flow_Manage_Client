@@ -5,9 +5,9 @@ import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Forgot from "../Pages/Forgot";
-import Dashboard from "../Pages/Dashboard";
 import ContactUs from "../Pages/ContactUs";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 const routes = createBrowserRouter([
   {
@@ -18,15 +18,6 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-      },
-
-      {
-        path: "/dashboard",
-        element: (
-          <PrivetRoute>
-            <Dashboard></Dashboard>
-          </PrivetRoute>
-        ),
       },
 
       {
@@ -44,6 +35,20 @@ const routes = createBrowserRouter([
       {
         path: "/login/forgot",
         element: <Forgot></Forgot>,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivetRoute>
+        <Dashboard></Dashboard>
+      </PrivetRoute>
+    ),
+    children: [
+      {
+        path: "/dashboard",
+        element: <div></div>,
       },
     ],
   },
