@@ -1,6 +1,5 @@
 // import BannerBg from "../../assets/students.jpg";
 import { Button } from "keep-react";
-import GirlImg from "../../assets/girl.png";
 import { motion } from "motion/react";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -71,30 +71,36 @@ const AuthProvider = ({ children }) => {
   };
 
   // Login retention function
+  // useEffect(() => {
+  //   const unsubcribe = onAuthStateChanged(auth, async (currentUser) => {
+  //     if (currentUser?.email) {
+  //       setUser(currentUser);
+  //       const user = { email: currentUser?.email };
+  //       const { data } = await axios.post(
+  //         `${import.meta.env.VITE_API_URL}/jwt`,
+  //         user,
+  //         {
+  //           withCredentials: true,
+  //         }
+  //       );
+  //       console.log(data);
+
+  //       setLoading(false);
+  //     } else {
+  //       setUser(currentUser);
+
+  //       const { data } = await axios.get(
+  //         `${import.meta.env.VITE_API_URL}/logout`,
+  //         { withCredentials: true }
+  //       );
+  //       console.log(data);
+  //     }
+  //     setLoading(false);
+  //   });
+
   useEffect(() => {
     const unsubcribe = onAuthStateChanged(auth, async (currentUser) => {
-      if (currentUser?.email) {
-        setUser(currentUser);
-        const user = { email: currentUser?.email };
-        const { data } = await axios.post(
-          `${import.meta.env.VITE_API_URL}/jwt`,
-          user,
-          {
-            withCredentials: true,
-          }
-        );
-        console.log(data);
-
-        setLoading(false);
-      } else {
-        setUser(currentUser);
-
-        const { data } = await axios.get(
-          `${import.meta.env.VITE_API_URL}/logout`,
-          { withCredentials: true }
-        );
-        console.log(data);
-      }
+      setUser(currentUser);
       setLoading(false);
     });
 
