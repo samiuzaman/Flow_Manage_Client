@@ -18,46 +18,39 @@ const Banner = () => {
   return (
     <div
       data-aos="zoom-in-up"
-      className={`bg-[#EAE1BA] flex flex-col lg:flex-row justify-between items-center px-[7%] z-20`}
+      className={`py-64 banner-background flex flex-col lg:flex-row justify-between items-center z-20`}
     >
-      <div className="w-full lg:w-1/2 space-y-4 p-2 lg:p-6 py-8">
+      <div className="w-full text-center space-y-4 p-2 lg:p-6 py-8">
         <h2
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-delay="400"
-          className="text-3xl lg:text-4xl font-bold text-[#e056fd] leading-relaxed"
+          className="text-3xl lg:text-4xl font-extrabold text-white leading-relaxed"
         >
-          Your Journey to Mastery Starts Here, Find the Perfect
+          Modern Solutions for Employee and Payroll Management
         </h2>
         <p
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-delay="600"
-          className="text-metal-800 font-Noto italic pb-5"
+          className="w-full lg:w-4/6 mx-auto text-metal-200 font-Noto"
         >
-          Welcome to Tutor World, your ultimate platform for connecting with
-          expert tutors across the globe. Whether you're looking to master a new
-          language, excel in academics, or explore a skill, we've got the
-          perfect tutor for you
+          Manage your team and payments smarter with one powerful platform. From
+          assigning daily tasks to tracking employee performance and handling
+          monthly salary disbursements—everything is now easier, faster, and
+          more organized. Say goodbye to scattered tools and manual processes.
         </p>
-        <Link to={`/findTutors`}>
-          <Button
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="800"
-            color="success"
-          >
-            Check Our Tutors
-          </Button>
-        </Link>
-      </div>
-      <div className="w-full lg:w-1/2 pt-8 z-10">
-        <motion.img
-          animate={{ x: 40 }}
-          transition={{ duration: 1.5, delay: 1 }}
-          className="w-5/6"
-          src={GirlImg}
-        />
+        <div className="flex justify-center items-center gap-8">
+          <div className="border-2 border-white p-2 bg-warning-25">
+            4.2K+ Employees Managed
+          </div>
+          <div className="border-2 border-white p-2 bg-warning-25">
+            1M+ Salary Processed
+          </div>
+          <div className="border-2 border-white p-2 bg-warning-25">
+            99.9% Uptime
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -35,9 +35,10 @@ const NavbarComponent = () => {
 
   return (
     <Navbar
-      className={`sticky top-0 z-30 px-[2%] lg:px-[7%] shadow-lg rounded-none`}
+      className={`absulute bg-opacity-10 fixed w-full top-0 z-30 px-[2%] lg:px-[7%] rounded-none border-none`}
     >
       <NavbarContainer className="mx-auto p-2 md:p-0 ">
+
         <NavbarBrand>
           <Link
             to="/"
