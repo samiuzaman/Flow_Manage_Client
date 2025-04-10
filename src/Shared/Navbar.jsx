@@ -35,17 +35,17 @@ const NavbarComponent = () => {
 
   return (
     <Navbar
-      className={`absulute bg-opacity-10 fixed w-full top-0 z-30 px-[2%] lg:px-[7%] rounded-none border-none`}
+      className={`absulute bg-opacity-5 fixed w-full top-0 z-30 px-[2%] lg:px-[7%] rounded-none border-none`}
     >
       <NavbarContainer className="mx-auto p-2 md:p-0 ">
-
         <NavbarBrand>
           <Link
             to="/"
-            className="flex justify-center gap-1 items-center text-2xl text-error-400 font-semibold"
+            className={`flex justify-center gap-1 items-center text-2xl  font-semibold`}
           >
             <img className="w-18 h-8" src={Logo} />
-            Flow Manage
+            <span className="text-[#F4AA25]">Flow</span>{" "}
+            <span className="text-[#4bb8e7]">Manage</span>
           </Link>
         </NavbarBrand>
         <NavbarList className="space-x-5 dark:text-white">
