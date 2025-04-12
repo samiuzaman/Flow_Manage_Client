@@ -1,13 +1,11 @@
 import { Helmet } from "react-helmet-async";
-import useServices from "../../Hook/useServices";
 import useReviews from "../../Hook/useReviews";
 import Banner from "./Banner";
 import Services from "./Services";
 
 const Home = () => {
-  const [services] = useServices();
   const [reviews] = useReviews();
-  console.log("All Services: ", services);
+
   console.log("All Reviews: ", reviews);
   return (
     <div>
