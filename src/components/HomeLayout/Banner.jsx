@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     <div
       data-aos="zoom-in-up"
-      className={`py-64 banner-background flex flex-col lg:flex-row justify-between items-center z-20`}
+      className={`py-60 lg:py-80 banner-background flex flex-col lg:flex-row justify-between items-center z-20`}
     >
       <div className="w-full text-center space-y-4 p-2 lg:p-6 py-8">
         <h2
