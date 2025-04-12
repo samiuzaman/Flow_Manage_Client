@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage";
-import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Forgot from "../Pages/Forgot";
 import ContactUs from "../Pages/ContactUs";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Home from "../Pages/Home/Home";
 
 const routes = createBrowserRouter([
   {

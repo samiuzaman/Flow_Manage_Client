@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import Banner from "../components/HomeLayout/Banner";
-import useServices from "../Hook/useServices";
-import useReviews from "../Hook/useReviews";
+import useServices from "../../Hook/useServices";
+import useReviews from "../../Hook/useReviews";
+import Banner from "./Banner";
+import Services from "./Services";
 
 const Home = () => {
   const [services] = useServices();
@@ -14,8 +15,9 @@ const Home = () => {
         <title>Home | Flow Manage</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="dark:bg-metal-800">
+      <div className="bg-[#F4F5FA] dark:bg-metal-800">
         <Banner></Banner>
+        <Services></Services>
       </div>
     </div>
   );
