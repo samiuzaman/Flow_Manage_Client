@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import useReviews from "../../Hook/useReviews";
 import Banner from "./Banner";
 import Services from "./Services";
+import Newsletter from "./Newsletter";
 
 const Home = () => {
   const [reviews] = useReviews();
@@ -16,6 +17,7 @@ const Home = () => {
       <div className="bg-[#F4F5FA] dark:bg-metal-800">
         <Banner></Banner>
         <Services></Services>
+        <Newsletter></Newsletter>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const Footer = () => {
           >
             <img className="w-18 h-8" src={Logo} />
             <span className="text-[#F4AA25]">Flow</span>{" "}
-            <span className="text-[#4bb8e7]">Manage</span>
+            <span className="text-[#2daee6]">Manage</span>
           </footer>
 
           <footer>

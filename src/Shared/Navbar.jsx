@@ -35,7 +35,7 @@ const NavbarComponent = () => {
 
   return (
     <Navbar
-      className={`absulute bg-opacity-5 fixed w-full top-0 z-30 px-[2%] lg:px-[7%] rounded-none border-none`}
+      className={`absulute bg-white fixed w-full top-0 z-30 px-[2%] lg:px-[7%] rounded-none `}
     >
       <NavbarContainer className="mx-auto p-2 md:p-0 ">
         <NavbarBrand>
@@ -45,7 +45,7 @@ const NavbarComponent = () => {
           >
             <img className="w-18 h-8" src={Logo} />
             <span className="text-[#F4AA25]">Flow</span>{" "}
-            <span className="text-[#4bb8e7]">Manage</span>
+            <span className="text-[#2daee6]">Manage</span>
           </Link>
         </NavbarBrand>
         <NavbarList className="space-x-5 dark:text-white">

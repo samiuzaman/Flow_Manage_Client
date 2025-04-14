@@ -29,8 +29,8 @@ const ServiceCard = ({ service }) => {
         <CardContent className="space-y-2">
           <h3 className="text-xl font-medium min-h-14 mb-4">{title}</h3>
           <p className="text-metal-700">Category: {category}</p>
-          <p className="text-metal-700">Price: {min_price}</p>
-          <p className="text-metal-700">Total Clients: {total_clients}</p>
+          <p className="text-metal-700">Minimum-Price: ${min_price}</p>
+          <p className="text-metal-700">Total Clients: {total_clients}+</p>
           {/* <p>
             Technology :{" "}
             {technologies?.map((technologie) => (
